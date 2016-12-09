@@ -1,0 +1,35 @@
+{
+  "name": "node-energenie-pimote",
+  "version": "1.0.0",
+  "description": "Remotely control power sockets from the Raspberry Pi",
+  "main": "index.js",
+  "bin": { "pimote" : "./bin/pimote" },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/valchonedelchev/node-energenie-pimote"
+  },
+  "keywords": [
+    "energenie",
+    "remote",
+    "pimote",
+    "control",
+    "power",
+    "socket",
+    "raspberry",
+    "pi",
+    "rpi",
+    "ener002"
+  ],
+  "author": "Valcho Nedelchev <vulcho+npm@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valchonedelchev/node-energenie-pimote/issues"
+  },
+  "homepage": "https://github.com/valchonedelchev/node-energenie-pimote#readme",
+  "dependencies": {
+    "rpio": "^0.9.12"
+  }
+}

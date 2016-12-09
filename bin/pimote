@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+'use strict';
+
+if (process.argv[3]!==undefined) {
+	var pimote = require('node-energenie-pimote');
+
+	if (process.argv[2]=='on') {
+		console.log('Turning on #'+process.argv[3]);
+		pimote.switchOn(process.argv[3]);
+	}
+
+	if (process.argv[2]=='off') {
+		console.log('Turning off #'+process.argv[3]);
+		pimote.switchOff(process.argv[3]);
+	}
+
+	if (process.argv[2]=='pair' && process.argv[3]>0) {
+		console.log('Pairing #'+process.argv[3]);
+		pimote.switchOn(process.argv[3], 5000);
+	}
+
+	pimote.close();
+}
+else {
+	console.log('USAGE: ');
+	console.log('  pimote [on|off|pair] [1,2,3,4]');
+}
